@@ -1,0 +1,169 @@
+/* responsive */
+@media (max-width: 1200px) {
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.section-title h2, .about-content h2, .location-info h3 {
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width: 992px) {
+.about-container, .location-container {
+    flex-direction: column;
+}
+
+.about-img, .about-content, .map, .location-info {
+    width: 100%;
+}
+
+.about-img {
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.features {
+    grid-template-columns: 1fr;
+}
+
+.footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
+@media (max-width: 768px) {
+.navbar {
+    padding: 1.5rem 5%;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--dark-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    z-index: 999;
+}
+
+.nav-links.active {
+    right: 0;
+}
+
+.nav-links li {
+    margin: 1.5rem 0;
+    margin-left: 0;
+}
+
+.menu-toggle {
+    display: block;
+    z-index: 1000;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.swiper {
+    height: auto;
+}
+
+.menu-slide {
+    height: auto;
+}
+
+.menu-tabs {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-tab {
+    margin: 0.5rem 0;
+}
+
+.section-title h2, .about-content h2, .location-info h3 {
+    font-size: 2.2rem;
+}
+
+.footer-col h3 {
+    font-size: 1.6rem;
+}
+}
+
+@media (max-width: 576px) {
+.hero h1 {
+    font-size: 2.2rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+}
+
+.section-title h2, .about-content h2, .location-info h3 {
+    font-size: 2rem;
+}
+
+.section-title h2::after, .about-content h2::after, .location-info h3::after {
+    height: 3px;
+    bottom: -8px;
+}
+
+.menu-content h3 {
+    font-size: 1.4rem;
+}
+
+.menu-content .price {
+    font-size: 1.3rem;
+}
+
+.menu-content p {
+    font-size: 1rem;
+}
+
+.feature-icon, .info-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+.feature-content h4, .info-content h4 {
+    font-size: 1.2rem;
+}
+
+.feature-content p, .info-content p, .footer-col p, .footer-links a {
+    font-size: 1rem;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    margin-top: 70px;
+}
+}

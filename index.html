@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کافه نمونه | Sample Cafe</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"  href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">کافه نمونه</a>
+            <ul class="nav-links">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#menu">منو</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#gallery">گالری</a></li>
+                <li><a href="#location">موقعیت</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        
+        <div class="hero" id="home">
+            <h1>تجربه ای فوق العاده از طعم های بی نظیر</h1>
+            <p>کافه نمونه با فضایی مدرن و منوی متنوع، پذیرای شما عزیزان است. بهترین قهوه ها و دسرهای ویژه را در محیطی آرام و دلنشین تجربه کنید.</p>
+            <a href="#menu" class="btn">مشاهده منو</a>
+        </div>
+    </header>
+    
+    <!-- menu -->
+    <section class="menu-section" id="menu">
+        <div class="section-title">
+            <h2>منو</h2>
+        </div>
+        
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-category="coffee">نوشیدنی های گرم</button>
+            <button class="menu-tab" data-category="cold">نوشیدنی های سرد</button>
+            <button class="menu-tab" data-category="breakfast">صبحانه</button>
+            <button class="menu-tab" data-category="pizza">پیتزاها</button>
+            <button class="menu-tab" data-category="dessert">دسرها</button>
+            <button class="menu-tab" data-category="sandwich">ساندویچ و سیب زمینی</button>
+        </div>
+        
+        <!-- نوشیدنی های گرم -->
+        <div class="menu-category active" id="coffee">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/coffee.webp" alt="قهوه ویژه">
+                        </div>
+                        <div class="menu-content">
+                            <h3>قهوه</h3>
+                            <span class="price">۶۴,۰۰۰ تومان</span>
+                            <p>ترکیبی منحصر به فرد از دانه های قهوه عربیکا و روبوستا با طعمی غنی و عالی</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/latte.jpg" alt="لاته">
+                        </div>
+                        <div class="menu-content">
+                            <h3>لاته</h3>
+                            <span class="price">۸۶,۰۰۰ تومان</span>
+                            <p>اسپرسو با شیر بخار دیده و طرح های هنری روی فوم شیر</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/tea.jpeg" alt="چای ویژه">
+                        </div>
+                        <div class="menu-content">
+                            <h3>چای</h3>
+                            <span class="price">۴۵,۰۰۰ تومان</span>
+                            <p>ترکیبی از چای سیاه مرغوب با هل، دارچین و گلبرگ های رز</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 4-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/hotchocolate.webp" alt="هات چاکلت">
+                        </div>
+                        <div class="menu-content">
+                            <h3>هات چاکلت ویژه</h3>
+                            <span class="price">۸۰,۰۰۰ تومان</span>
+                            <p>شکلات داغ با خامه زده شده و تکه های شکلات تلخ</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- نوشیدنی های سرد -->
+        <div class="menu-category" id="cold">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/icelatte.webp" alt="آیس لته">
+                        </div>
+                        <div class="menu-content">
+                            <h3>آیس لته</h3>
+                            <span class="price">۹۵,۰۰۰ تومان</span>
+                            <p>اسپرسو با شیر سرد و یخ، مناسب برای روزهای گرم</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/frappemocha.jpeg" alt="موکا فراپه">
+                        </div>
+                        <div class="menu-content">
+                            <h3>موکا فراپه</h3>
+                            <span class="price">۱۷۰,۰۰۰ تومان</span>
+                            <p>ترکیبی از قهوه، شیر، شکلات و یخ به همراه خامه</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/smoti-moz.jpg" alt="اسموتی موز">
+                        </div>
+                        <div class="menu-content">
+                            <h3>اسموتی موز</h3>
+                            <span class="price">۹۹,۰۰۰ تومان</span>
+                            <p>ترکیبی از موز، شیر، ماست و عسل</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 4-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/limonade.avif" alt="لیموناد">
+                        </div>
+                        <div class="menu-content">
+                            <h3>لیموناد</h3>
+                            <span class="price">۵۵,۰۰۰ تومان</span>
+                            <p>آب لیموی تازه با نعنا و کمی شکر</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- صبحانه -->
+        <div class="menu-category" id="breakfast">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/pancake.avif" alt="پنکیک">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پنکیک میوه ای</h3>
+                            <span class="price">۱۲۰,۰۰۰ تومان</span>
+                            <p>سه عدد پنکیک با عسل، میوه های تازه و خامه زده شده</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/omlet.jpg" alt="املت">
+                        </div>
+                        <div class="menu-content">
+                            <h3>املت</h3>
+                            <span class="price">۱۱۰,۰۰۰ تومان</span>
+                            <p>املت با قارچ، پنیر چدار، گوجه و فلفل دلمه ای</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/segg.jpeg" alt="سوسیس تخم مرغ">
+                        </div>
+                        <div class="menu-content">
+                            <h3>سوسیس تخم مرغ</h3>
+                            <span class="price">۱۳۵,۰۰۰ تومان</span>
+                            <p>سوسیس به همراه تخم مرغ</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- پیتزاها -->
+        <div class="menu-category" id="pizza">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/p-special.avif" alt="پیتزا مخصوص">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پیتزا مخصوص</h3>
+                            <span class="price">۲۷۰,۰۰۰ تومان</span>
+                            <p>سس گوجه، پنیر موزارلا، ژامبون، قارچ، زیتون و فلفل دلمه ای</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/p-pepperoni.avif" alt="پیتزا پپرونی">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پیتزا پپرونی</h3>
+                            <span class="price">۳۴۰,۰۰۰ تومان</span>
+                            <p>سس گوجه، پنیر موزارلا و پپرونی فراوان</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/p-sabzijat.jpeg" alt="پیتزا سبزیجات">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پیتزا سبزیجات</h3>
+                            <span class="price">۳۲۰,۰۰۰ تومان</span>
+                            <p>سس گوجه، پنیر موزارلا، قارچ، فلفل دلمه ای، زیتون و گوجه گیلاسی</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 4-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/p-formages.avif" alt="پیتزا چهار پنیر">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پیتزا چهار پنیر</h3>
+                            <span class="price">۲۳۷,۰۰۰ تومان</span>
+                            <p>ترکیبی از پنیر موزارلا، چدار، پارمزان و گورگونزولا</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- دسرها -->
+        <div class="menu-category" id="dessert">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/cheesecake-ch.jpeg" alt="چیزکیک">
+                        </div>
+                        <div class="menu-content">
+                            <h3>چیزکیک شکلاتی</h3>
+                            <span class="price">۸۵,۰۰۰ تومان</span>
+                            <p>چیزکیک خامه ای با شکلات و سس شکلات</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/tiramisoo.jpg" alt="تیرامیسو">
+                        </div>
+                        <div class="menu-content">
+                            <h3>تیرامیسو کلاسیک</h3>
+                            <span class="price">۹۰,۰۰۰ تومان</span>
+                            <p>دسر ایتالیایی با بیسکویت لیدی فینگر، قهوه، ماسکارپونه و کاکائو</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/pancake.avif" alt="پنکیک میوه">
+                        </div>
+                        <div class="menu-content">
+                            <h3>پنکیک میوه ای</h3>
+                            <span class="price">۱۲۰,۰۰۰ تومان</span>
+                            <p>پنکیک نرم با عسل، میوه های تازه و بستنی وانیلی</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        
+        <!-- ساندویچ ها -->
+        <div class="menu-category" id="sandwich">
+            <div class="swiper menu-slider">
+                <div class="swiper-wrapper">
+                    <!-- slide 1-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/hotdog.webp" alt="هات داگ">
+                        </div>
+                        <div class="menu-content">
+                            <h3>هات داگ تنوری</h3>
+                            <span class="price">۲۴۶,۰۰۰ تومان</span>
+                            <p>سوسیس هات داگ، پنیر ورقه ای، قارچ، نان باگت و سس خردل و کچاپ</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 2-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/s-burger.jpeg" alt="برگر">
+                        </div>
+                        <div class="menu-content">
+                            <h3>برگر مخصوص</h3>
+                            <span class="price">۲۸۰,۰۰۰ تومان</span>
+                            <p>نان برگر، همبرگر گوشت، پنیر چدار، کاهو، گوجه، پیاز و سس مخصوص</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide 3-->
+                    <div class="swiper-slide menu-slide">
+                        <div class="menu-img">
+                            <img src="assets/img/fries.avif" alt="سیب زمینی">
+                        </div>
+                        <div class="menu-content">
+                            <h3>سیب زمینی ویژه</h3>
+                            <span class="price">۱۱۰,۰۰۰ تومان</span>
+                            <p>سیب زمینی سرخ شده به همراه سس کچاپ</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- about-->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-img animate">
+                <img src="assets/img/gallery2.jpg" alt="درباره کافه نمونه">
+            </div>
+            <div class="about-content animate">
+                <h2>درباره کافه نمونه</h2>
+                <p>کافه نمونه در سال ۱۴۰۱ با هدف ایجاد فضایی متفاوت برای دوستداران قهوه و نوشیدنی های گرم تأسیس شد. ما با بهره گیری از بهترین مواد اولیه و متخصصان حرفه ای در زمینه قهوه، تلاش می کنیم تجربه ای منحصر به فرد برای شما خلق کنیم.</p>
+                <p>فضای دنج و آرام کافه نمونه همراه با موسیقی ملایم و طراحی داخلی مدرن، محیطی ایده آل برای دورهمی های دوستانه، جلسات کاری و اوقات فراغت شما فراهم می کند.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>قهوه های ویژه</h4>
+                            <p>استفاده از بهترین دانه های قهوه</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>منوی متنوع</h4>
+                            <p>انواع نوشیدنی، صبحانه و دسر</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>اینترنت پرسرعت</h4>
+                            <p>وای فای رایگان برای مشتریان</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>خدمات سریع و ویژه</h4>
+                            <p>ارائه خدمات با بالاترین سرعت و کیفیت</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- gallery-->
+    <section class="gallery-section" id="gallery">
+        <div class="section-title">
+            <h2>گالری تصاویر</h2>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery1.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+            
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery2.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+            
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery3.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+            
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery4.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+            
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery5.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+            
+            <div class="gallery-item animate">
+                <img src="assets/img/gallery6.jpg">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- location-->
+    <section class="location-section" id="location">
+        <div class="section-title">
+            <h2>موقعیت مکانی</h2>
+        </div>
+        
+        <div class="location-container">
+            <div class="map animate">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.234567890123!2d50.35678912345678!3d35.02123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8d8a9b9b9b9b9b%3A0x9b9b9b9b9b9b9b9b!2z2KfZhNmF2LnZhdi52KfZhSDYp9mE2YXZhdmE2YrYqQ!5e0!3m2!1sen!2sir!4v1620000000000!5m2!1sen!2sir" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="location-info animate">
+                <h3>آدرس و اطلاعات تماس</h3>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>آدرس</h4>
+                        <p>استان مرکزی، ساوه</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>تلفن</h4>
+                        <p>۰۸۶-۱۲۳۴۵۶۷۸</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>ایمیل</h4>
+                        <p>info@samplecafe.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>ساعات کاری</h4>
+                        <p>هر روز از ساعت ۸ صبح تا ۱ شب</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>درباره ما</h3>
+                <p>کافه نمونه با بیش از ۷ سال سابقه در زمینه ارائه بهترین قهوه ها و نوشیدنی های گرم و سرد، همواره تلاش کرده تا تجربه ای متفاوت برای مشتریان خود خلق کند.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>لینک های سریع</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#menu">منو</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#gallery">گالری</a></li>
+                    <li><a href="#location">موقعیت مکانی</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>خدمات ما</h3>
+                <ul class="footer-links">
+                    <li><a href="#menu">نوشیدنی های گرم</a></li>
+                    <li><a href="#menu">نوشیدنی های سرد</a></li>
+                    <li><a href="#menu">صبحانه</a></li>
+                    <li><a href="#menu">پیتزا ها</a></li>
+                    <li><a href="#menu">دسر ها</a></li>
+                    <li><a href="#menu">ساندویچ و سیب زمینی</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>خبرنامه</h3>
+                <p>برای دریافت تخفیف ها و پیشنهادات ویژه، در خبرنامه ما عضو شوید.</p>
+                <form class="newsletter">
+                    <input type="email" placeholder="آدرس ایمیل شما" required>
+                    <button type="submit">عضویت</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>طراحی شده توسط پارسا سدهی</p>
+            <p>&copy; ۱۴۰۴ کلیه حقوق برای کافه نمونه محفوظ است.</p>
+        </div>
+    </footer>
+    
+    <!-- back to top btn-->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Java Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
